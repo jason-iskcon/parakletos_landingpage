@@ -177,3 +177,5 @@ cd parakletos_landingpage
 ---
 
 **🚀 Ready for professional A/B/C testing launch!** 
+
+<!-- Deployment trigger: Azure Static Web Apps deployment --> 
