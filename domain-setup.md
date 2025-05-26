@@ -1,11 +1,11 @@
-# 🌐 Domain Setup Guide: parakletos.ai
+# 🌐 Domain Setup Guide: parakletos.io & parakletos.co.uk
 
 ## Azure Static Web Apps + Custom Domain
 
-### Step 1: Domain Registration
-- **Domain**: parakletos.ai
-- **Registrar**: Namecheap, GoDaddy, or Azure Domains
-- **Cost**: ~$10-15/year for .ai domains
+### Step 1: Domain Registration ✅ COMPLETED
+- **Primary Domain**: parakletos.io
+- **Secondary Domain**: parakletos.co.uk
+- **Status**: Both domains purchased and ready for configuration
 
 ### Step 2: DNS Configuration
 After deploying to Azure Static Web Apps:
@@ -34,13 +34,18 @@ Value: parakletos-abtest.azurestaticapps.net
 
 ### Step 4: URL Structure
 ```
-https://parakletos.ai/                → Test index
-https://parakletos.ai/original       → Control version
-https://parakletos.ai/variation-a    → FOMO version
-https://parakletos.ai/variation-b    → Proof version
-https://parakletos.ai/variation-c    → Ease version
-https://parakletos.ai/apply          → Beta registration
+https://parakletos.io/                → Test index
+https://parakletos.io/original       → Control version
+https://parakletos.io/variation-a    → FOMO version
+https://parakletos.io/variation-b    → Proof version
+https://parakletos.io/variation-c    → Ease version
+https://parakletos.io/apply          → Beta registration
 ```
+
+### Step 5: Secondary Domain (parakletos.co.uk)
+- Can redirect to primary domain (parakletos.io)
+- Or serve UK-specific content if needed
+- Configure same DNS records for both domains
 
 ### Step 5: Redirect Setup
 Add to `staticwebapp.config.json`:
