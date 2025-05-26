@@ -39,7 +39,7 @@
   ],
   "responseOverrides": {
     "404": {
-      "serve": "/test-index.html"
+      "rewrite": "/test-index.html"
     }
   },
   "mimeTypes": {
