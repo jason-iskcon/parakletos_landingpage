@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parakletos Landing Page A/B/C Test</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1E40AF;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .variation {
+            border: 2px solid #E8F0FA;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+        .variation:hover {
+            border-color: #D4AF37;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .variation h2 {
+            color: #1E40AF;
+            margin-bottom: 10px;
+        }
+        .variation p {
+            color: #6D6C6C;
+            margin-bottom: 15px;
+        }
+        .btn {
+            background-color: #D4AF37;
+            color: #1E40AF;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #C79C30;
+        }
+        .framework {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+        }
+        .metrics {
+            background-color: #E8F0FA;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+        .metrics h3 {
+            color: #1E40AF;
+            margin-bottom: 10px;
+        }
+        .original {
+            background-color: #f0f9ff;
+            border-color: #1E40AF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Parakletos Landing Page A/B/C Test</h1>
+        
+        <div class="variation original">
+            <h2>📊 Original (Control)</h2>
+            <p class="framework">Framework: Traditional benefits-focused • Length: Comprehensive</p>
+            <p>The original landing page with complete feature breakdown, testimonials, and detailed FAQ section.</p>
+            <a href="index.html" class="btn" target="_blank">View Original</a>
+        </div>
+
+        <div class="variation">
+            <h2>⚡ Variation A - FOMO & Urgency</h2>
+            <p class="framework">Framework: AIDA • Emotional angle: Scarcity • Length: Shortest</p>
+            <p><strong>Hypothesis:</strong> Time-strapped worship leaders will act when the risk of missing a rare opportunity is clear. Tests exclusivity ("only 20") and closing date.</p>
+            <a href="variation-1-fomo.html" class="btn" target="_blank">View Variation A</a>
+        </div>
+
+        <div class="variation">
+            <h2>📈 Variation B - Results & Social Proof</h2>
+            <p class="framework">Framework: PASO • Emotional angle: Confidence through evidence • Length: Longest</p>
+            <p><strong>Hypothesis:</strong> Analytical leaders want hard numbers and peer experiences. Tests whether adding depth and proof boosts demo calls despite longer copy.</p>
+            <a href="variation-2-proof.html" class="btn" target="_blank">View Variation B</a>
+        </div>
+
+        <div class="variation">
+            <h2>🎯 Variation C - Ease & Quick Wins</h2>
+            <p class="framework">Framework: 4Ps • Emotional angle: Relief, simplicity • Length: Medium</p>
+            <p><strong>Hypothesis:</strong> Technical overwhelm stops small congregations. Tests whether lowering perceived effort increases sign-ups from resource-constrained ministries.</p>
+            <a href="variation-3-ease.html" class="btn" target="_blank">View Variation C</a>
+        </div>
+
+        <div class="metrics">
+            <h3>📊 Testing Guidelines</h3>
+            <ul>
+                <li><strong>Split:</strong> 25% Control / 25% A / 25% B / 25% C</li>
+                <li><strong>Primary Metric:</strong> Beta application registrations</li>
+                <li><strong>Secondary Metrics:</strong> Demo bookings, CTA clicks, scroll depth</li>
+                <li><strong>Duration:</strong> Until ≥100 conversions or 2 weeks</li>
+                <li><strong>Tools:</strong> Google Optimize, Hotjar, or similar</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; color: #6D6C6C;">
+            <p>Each variation uses the same visual design system but tests different psychological triggers.</p>
+            <p><strong>Goal:</strong> Discover which lever—scarcity, proof, or effort reduction—most motivates faith-tech audiences.</p>
+        </div>
+    </div>
+</body>
+</html> 

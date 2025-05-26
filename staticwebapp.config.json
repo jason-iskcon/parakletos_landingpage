@@ -1,0 +1,55 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "serve": "/test-index.html"
+    },
+    {
+      "route": "/original",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/variation-a",
+      "serve": "/variation-1-fomo.html"
+    },
+    {
+      "route": "/variation-b", 
+      "serve": "/variation-2-proof.html"
+    },
+    {
+      "route": "/variation-c",
+      "serve": "/variation-3-ease.html"
+    },
+    {
+      "route": "/apply",
+      "serve": "/beta-registration.html"
+    },
+    {
+      "route": "/terms",
+      "serve": "/terms.html"
+    },
+    {
+      "route": "/privacy",
+      "serve": "/privacy.html"
+    },
+    {
+      "route": "/*",
+      "serve": "/test-index.html",
+      "statusCode": 404
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "serve": "/test-index.html"
+    }
+  },
+  "mimeTypes": {
+    ".json": "application/json",
+    ".css": "text/css",
+    ".js": "application/javascript",
+    ".html": "text/html"
+  },
+  "globalHeaders": {
+    "Cache-Control": "public, max-age=3600"
+  }
+} 

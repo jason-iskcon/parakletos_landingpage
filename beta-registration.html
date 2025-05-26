@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Parakletos Beta Access</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .registration-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: var(--space-2xl);
+            border-radius: 8px;
+            box-shadow: var(--shadow-card);
+        }
+        .form-group {
+            margin-bottom: var(--space-lg);
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: var(--space-sm);
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid var(--color-bg-subtle);
+            border-radius: var(--radius);
+            font-size: 16px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-lg);
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+        }
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin-top: 4px;
+        }
+        .required {
+            color: #e74c3c;
+        }
+        .form-note {
+            font-size: 14px;
+            color: var(--color-text);
+            margin-top: var(--space-sm);
+        }
+        .beta-info {
+            background: var(--color-bg-subtle);
+            padding: var(--space-lg);
+            border-radius: var(--radius);
+            margin-bottom: var(--space-xl);
+        }
+        .beta-info h3 {
+            margin-bottom: var(--space-md);
+            color: var(--color-primary);
+        }
+        .beta-info ul {
+            margin: 0;
+            padding-left: var(--space-lg);
+        }
+        .beta-info li {
+            margin-bottom: var(--space-sm);
+        }
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <section class="hero" style="padding: var(--space-2xl) 0;">
+        <div class="container">
+            <div style="text-align: center;">
+                <h1>Apply for Parakletos Beta Access</h1>
+                <p class="sub-headline">Join 20 pioneering churches transforming multilingual worship</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section style="background: var(--color-bg-pale); padding: var(--space-4xl) 0;">
+        <div class="container">
+            <div class="beta-info">
+                <h3>🚀 Beta Program Details</h3>
+                <ul>
+                    <li><strong>Limited to 20 churches</strong> worldwide</li>
+                    <li><strong>Beta period:</strong> March - August 2025</li>
+                    <li><strong>Investment:</strong> £150/month (credited toward full launch)</li>
+                    <li><strong>Includes:</strong> Unlimited services, 100+ languages, priority support</li>
+                    <li><strong>Requirements:</strong> Laptop (2018+), internet, willingness to provide feedback</li>
+                </ul>
+            </div>
+
+            <form class="registration-form" id="betaForm" action="#" method="POST">
+                <h2 style="text-align: center; margin-bottom: var(--space-xl); color: var(--color-primary);">Church Information</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="churchName">Church Name <span class="required">*</span></label>
+                        <input type="text" id="churchName" name="churchName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="denomination">Denomination</label>
+                        <select id="denomination" name="denomination">
+                            <option value="">Select denomination</option>
+                            <option value="catholic">Catholic</option>
+                            <option value="protestant">Protestant</option>
+                            <option value="orthodox">Orthodox</option>
+                            <option value="anglican">Anglican</option>
+                            <option value="baptist">Baptist</option>
+                            <option value="methodist">Methodist</option>
+                            <option value="pentecostal">Pentecostal</option>
+                            <option value="presbyterian">Presbyterian</option>
+                            <option value="lutheran">Lutheran</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City <span class="required">*</span></label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country <span class="required">*</span></label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="weeklyAttendance">Weekly Attendance</label>
+                        <select id="weeklyAttendance" name="weeklyAttendance">
+                            <option value="">Select range</option>
+                            <option value="under-50">Under 50</option>
+                            <option value="50-100">50-100</option>
+                            <option value="100-250">100-250</option>
+                            <option value="250-500">250-500</option>
+                            <option value="500-1000">500-1000</option>
+                            <option value="over-1000">Over 1000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="onlineViewers">Online Viewers (if streaming)</label>
+                        <input type="number" id="onlineViewers" name="onlineViewers" placeholder="Average weekly">
+                    </div>
+                </div>
+
+                <h2 style="text-align: center; margin: var(--space-xl) 0; color: var(--color-primary);">Contact Person</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="contactName" name="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Role <span class="required">*</span></label>
+                        <select id="role" name="role" required>
+                            <option value="">Select role</option>
+                            <option value="pastor">Pastor/Priest</option>
+                            <option value="worship-leader">Worship Leader</option>
+                            <option value="tech-director">Technical Director</option>
+                            <option value="administrator">Church Administrator</option>
+                            <option value="volunteer">Volunteer</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <h2 style="text-align: center; margin: var(--space-xl) 0; color: var(--color-primary);">Language Needs</h2>
+
+                <div class="form-group">
+                    <label for="currentLanguages">Languages currently used in services <span class="required">*</span></label>
+                    <input type="text" id="currentLanguages" name="currentLanguages" placeholder="e.g., English, Spanish, Mandarin" required>
+                    <div class="form-note">List all languages used in your services</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="desiredLanguages">Additional languages you'd like to support</label>
+                    <input type="text" id="desiredLanguages" name="desiredLanguages" placeholder="e.g., Portuguese, Arabic, French">
+                    <div class="form-note">Languages your congregation would benefit from</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="currentSolution">How do you currently handle multilingual needs?</label>
+                    <textarea id="currentSolution" name="currentSolution" placeholder="Describe your current approach (interpreters, printed translations, etc.)"></textarea>
+                </div>
+
+                <h2 style="text-align: center; margin: var(--space-xl) 0; color: var(--color-primary);">Technical Setup</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="hasLaptop">Do you have a laptop from 2018 or newer? <span class="required">*</span></label>
+                        <select id="hasLaptop" name="hasLaptop" required>
+                            <option value="">Select option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No, but can acquire one</option>
+                            <option value="unsure">Unsure</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="internetSpeed">Internet connection quality</label>
+                        <select id="internetSpeed" name="internetSpeed">
+                            <option value="">Select quality</option>
+                            <option value="excellent">Excellent (50+ Mbps)</option>
+                            <option value="good">Good (10-50 Mbps)</option>
+                            <option value="fair">Fair (5-10 Mbps)</option>
+                            <option value="poor">Poor (Under 5 Mbps)</option>
+                            <option value="unsure">Unsure</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="streamingExperience">Experience with live streaming</label>
+                    <select id="streamingExperience" name="streamingExperience">
+                        <option value="">Select experience level</option>
+                        <option value="expert">Expert - We stream regularly</option>
+                        <option value="intermediate">Intermediate - Some experience</option>
+                        <option value="beginner">Beginner - Limited experience</option>
+                        <option value="none">None - Would be our first time</option>
+                    </select>
+                </div>
+
+                <h2 style="text-align: center; margin: var(--space-xl) 0; color: var(--color-primary);">Commitment & Expectations</h2>
+
+                <div class="form-group">
+                    <label for="startDate">When would you like to start?</label>
+                    <select id="startDate" name="startDate">
+                        <option value="">Select timeframe</option>
+                        <option value="immediately">Immediately</option>
+                        <option value="1-month">Within 1 month</option>
+                        <option value="2-3-months">2-3 months</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="expectations">What do you hope to achieve with Parakletos?</label>
+                    <textarea id="expectations" name="expectations" placeholder="Describe your goals and expectations"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback">Are you willing to provide regular feedback during the beta?</label>
+                    <select id="feedback" name="feedback">
+                        <option value="">Select option</option>
+                        <option value="yes-weekly">Yes, weekly feedback</option>
+                        <option value="yes-monthly">Yes, monthly feedback</option>
+                        <option value="yes-occasional">Yes, occasional feedback</option>
+                        <option value="limited">Limited availability</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="/terms" target="_blank">Terms of Service</a> and <a href="/privacy" target="_blank">Privacy Policy</a> <span class="required">*</span></label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="marketing" name="marketing">
+                        <label for="marketing">I'd like to receive updates about Parakletos and related products</label>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: var(--space-xl);">
+                    <button type="submit" class="btn-primary large">Submit Beta Application</button>
+                    <div class="form-note" style="margin-top: var(--space-md);">
+                        We'll review your application and respond within 48 hours
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">© 2025 Parakletos Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                    <a href="/">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('betaForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.style.borderColor = '#e74c3c';
+                    isValid = false;
+                } else {
+                    field.style.borderColor = '#E8F0FA';
+                }
+            });
+            
+            if (isValid) {
+                // Show success message
+                alert('Thank you for your application! We\'ll review it and respond within 48 hours.');
+                
+                // Here you would normally submit to your backend
+                // For now, we'll just log the form data
+                const formData = new FormData(this);
+                console.log('Form submitted:', Object.fromEntries(formData));
+                
+                // Reset form
+                this.reset();
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+    </script>
+</body>
+</html> 
