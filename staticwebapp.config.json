@@ -34,8 +34,7 @@
     },
     {
       "route": "/*",
-      "serve": "/test-index.html",
-      "statusCode": 404
+      "serve": "/test-index.html"
     }
   ],
   "responseOverrides": {
