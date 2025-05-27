@@ -17,29 +17,22 @@
                 <div class="hero-text">
                     <h1>Worship Without Borders</h1>
                     <p class="sub-headline">Bring your preaching message to the world—instantly, live, clear, and in every language. Parakletos makes worship broadcasts effortless, even for small teams.</p>
-                    <!-- Registration Form -->
-                    <div class="registration-form">
-                        <form id="betaRegistrationForm" class="registration-form__container">
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" required placeholder="Enter your email address">
-                            </div>
-                            <div class="form-group">
-                                <label>Schedule a Meeting</label>
-                                <!-- Calendly inline widget begin -->
-                                <div class="calendly-inline-widget" data-url="https://calendly.com/jason-parakletos" style="min-width:320px;height:630px;"></div>
-                                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                                <!-- Calendly inline widget end -->
-                            </div>
-                            <button type="submit" class="btn-primary">Submit Application</button>
-                        </form>
+                    <p class="micro-line">Unlimited worship hours • from £99/mo • 30-day free trial</p>
+                    <div class="trust-badges">
+                        <span>Trusted by beta churches in London</span> • <span>99.9 % uptime</span> • <span>100 + languages</span>
                     </div>
-                    <p class="price-tag">From £99 / mo • 30-day free trial</p>
-                    <p class="fine-print">Only 20 churches will be selected for our beta program.</p>
+                    <form id="betaRegistrationForm" class="registration-form__container">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                        </div>
+                        <input type="hidden" name="interest_tier" value="unknown">
+                        <button type="button" class="btn-primary" id="scheduleBetaCall">Schedule My Beta Call (30 min)</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -93,6 +86,13 @@
         </div>
     </section>
 
+    <!-- Social proof band below pricing -->
+    <section class="testimonial-band">
+        <div class="container">
+            <blockquote>“Our Spanish-speaking families finally feel truly included. <span class="highlight">Engagement rose 38%</span> in just two months.”<br><span class="attribution">— Pastor Maria Rodriguez, St. Luke's Community Church</span></blockquote>
+        </div>
+    </section>
+
     <!-- 3. The Problem -->
     <section class="problem">
         <div class="container">
@@ -100,19 +100,15 @@
             <div class="problem-grid">
                 <div class="problem-item">
                     <div class="icon">🚫</div>
-                    <p>Visitors can't follow sermons in their native language</p>
+                    <p>Language barriers leave visitors and members feeling lost and disconnected.</p>
                 </div>
                 <div class="problem-item">
-                    <div class="icon">👂</div>
-                    <p>Hearing-impaired members miss crucial spiritual moments</p>
+                    <div class="icon">😔</div>
+                    <p>When people can't understand, they drift away—hurting belonging, giving, and growth.</p>
                 </div>
                 <div class="problem-item">
-                    <div class="icon">🔌</div>
-                    <p>Complex tech setups require expensive specialists</p>
-                </div>
-                <div class="problem-item">
-                    <div class="icon">⏸️</div>
-                    <p>Delayed translations break the flow of worship</p>
+                    <div class="icon">💡</div>
+                    <p>But what if every word could reach every heart, live and in their own language?</p>
                 </div>
             </div>
         </div>
@@ -174,11 +170,6 @@
         <div class="container">
             <h2>Voices of Faith</h2>
             <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="quote-mark">"</div>
-                    <p class="quote">"Our Spanish-speaking families finally feel truly included. <span class="highlight">Engagement rose 38%</span> in just two months."</p>
-                    <p class="attribution">— Pastor Maria Rodriguez, St. Luke's Community Church</p>
-                </div>
                 <div class="testimonial-card">
                     <div class="quote-mark">"</div>
                     <p class="quote">"The deaf community in our congregation can now participate fully. It's been transformational for our entire church family."</p>
@@ -246,7 +237,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Starter £99 • Growth £149 • Pro £249 per month. All flat-rate, unlimited worship hours, first 30 days free.</p>
+                        <p>Starter £99 • Growth £149 • Pro £249, unlimited hours, 30-day free trial.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -275,7 +266,7 @@
     <section class="final-call">
         <div class="container">
             <h2>Ready to Unite Every Voice?</h2>
-            <button class="btn-primary large">Secure My Beta Place</button>
+            <button class="btn-primary large">Start 30-Day Trial — from £99</button>
             <p class="fine-print">Limited to 20 churches • Beta starts March 2025</p>
         </div>
         <div class="background-accent"></div>
