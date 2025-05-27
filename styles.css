@@ -247,8 +247,8 @@ h3 {
 /* Mobile Hero */
 @media (max-width: 768px) {
     .hero {
-        height: 80vh;
-        min-height: 500px;
+        height: 90vh;
+        min-height: 600px;
     }
     
     .hero-text h1 {
