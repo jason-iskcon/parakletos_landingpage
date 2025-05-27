@@ -1108,4 +1108,67 @@ h3 {
     .faq-simple-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Registration Form Styles */
+.registration-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.registration-form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.25);
+}
+
+.calendly-inline-widget {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    background: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .registration-form {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .calendly-inline-widget {
+        min-width: 100% !important;
+        height: 500px !important;
+    }
 } 

@@ -1,0 +1,11 @@
+{
+    "name": "parakletos-registration",
+    "version": "1.0.0",
+    "description": "Registration handler for Parakletos beta program",
+    "main": "index.js",
+    "dependencies": {
+        "@azure/cosmos": "^4.0.0",
+        "@azure/identity": "^3.0.0",
+        "@azure/communication-email": "^1.0.0"
+    }
+} 

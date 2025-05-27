@@ -1,0 +1,21 @@
+<!-- Registration Form Component -->
+<div class="registration-form">
+    <form id="betaRegistrationForm" class="registration-form__container">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        </div>
+        <div class="form-group">
+            <label>Schedule a Meeting</label>
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/jason-parakletos" style="min-width:320px;height:630px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+        </div>
+        <button type="submit" class="btn-primary">Submit Application</button>
+    </form>
+</div> 
